@@ -3,7 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Signup Form</title>
   </head>
-  <body></body>
+  <body>
+    <div id="wrapper">
+      <div id="left">
+        <div id="logo">
+          <img src="assets/odin-lined.png" alt="Odin logo" /> ODIN
+        </div>
+      </div>
+      <div id="right">
+        <div id="intro"><h3>Sign up for our new service!</h3></div>
+        <div id="form">
+          <p>Let's do this!</p>
+          <form action="#" method="get">
+            <div id="formLeft">
+              <div>
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="first-name"
+                  placeholder="John"
+                  required
+                  tabindex="1"
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="jsmith@gmail.com"
+                  required
+                  tabindex="3"
+                />
+              </div>
+
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  tabindex="5"
+                />
+              </div>
+
+              <div>
+                <input type="submit" value="Create Account" tabindex="7" />
+              </div>
+            </div>
+
+            <div id="formRight">
+              <div>
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="last-name"
+                  placeholder="Smith"
+                  required
+                  tabindex="2"
+                />
+              </div>
+
+              <div>
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phone-number"
+                  placeholder="123-456-7890"
+                  required
+                  tabindex="4"
+                />
+              </div>
+
+              <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirm-password"
+                  required
+                  tabindex="6"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="login">
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

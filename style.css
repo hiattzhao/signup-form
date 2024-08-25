@@ -1,0 +1,134 @@
+/* Common color variables */
+:root {
+    --olive-green: #596D48;
+    --off-white: #E5E7EB;
+    --grey-transparent: #a5a5a52c;
+}
+
+/* Custom font */
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(assets/Norse-Bold.otf);
+}
+
+/* Simple CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+#left {
+    background-image:url(assets/leaves.jpg);
+    width: 40%;
+    background-size: cover;
+}
+
+#logo {
+    font-family: "Norse-Bold";
+    font-size: xx-large;
+    color: var(--off-white);
+    text-align: center;
+    background-color: var(--grey-transparent);
+    position: relative;
+    top: 25%;
+}
+
+#logo img {
+    width: 20%;
+    vertical-align: middle;
+}
+
+#right {
+    width: 60%;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+}
+
+#right div {
+    flex: 1;
+}
+
+#intro {
+    padding-left: 30px;
+}
+
+#intro h3 {
+    top: 50%;
+    position: relative;
+}
+
+#form {
+    background-color: white;
+    padding-left: 30px;
+}
+
+#form p {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: small;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    background-color: var(--off-white);
+    border-color: var(--olive-green);
+    border-style: solid;
+    font-size: medium;
+    line-height: 2;
+}
+
+input:focus {
+    border: 2px solid green;
+    outline: none;
+    box-shadow: 0px 0px 5px var(--olive-green);
+}
+
+input::placeholder {
+    font-size: medium;
+}
+
+#login {
+    padding-left: 30px;
+}
+
+input[type=submit] {
+    background-color: var(--olive-green);
+    border: var(--off-white);
+    color: var(--off-white);
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: large;
+    margin-top: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#login p {
+    margin-top: 20px;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: var(--olive-green);
+    font-weight: bold;
+}
